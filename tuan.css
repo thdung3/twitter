@@ -1,0 +1,13 @@
+.list-group-item {
+       background-color: rgb(245, 248, 250);
+
+}
+
+.list-group-item:hover {
+       background-color: rgb(225, 228, 225);
+       cursor: pointer;
+}
+
+.fa-cog  {
+       color: rgb(23,162,242);
+}
