@@ -63,11 +63,102 @@
                 <section>Left Side</section>
             </div>
 
+
             <!-- Jeesun Here -->
             <div class="col-6 border-red">
-                <section>Main</section>
-            </div>
+                <div class="tweet-box-content">
+                    <div class="row">
+                        <div class="tweetbox-user-area">
+                            <div class="tweetbox-user-icon">
+                            </div>
+                        </div>
+                        <div class="tweetbox-message-content" style="position: relative">
+                            <textarea id="tweetArea" placeholder="What's your story?"></textarea>
+                            <div id="remainArea">140</div>
+                            <div class="row tweetbox-message-toolbar">
+                                <div class="tweetbox-message-toolbar-icon">
+                                    <button type="button" class="btn btn-link"><i class="far fa-image"></i></button>
+                                    <button type="button" class="btn btn-link"><i class="fas fa-poll"></i></button>
+                                    <button type="button" class="btn btn-link"><i
+                                            class="far fa-kiss-wink-heart"></i></button>
+                                    <button type="button" class="btn btn-link"><i
+                                            class="far fa-calendar-alt"></i></button>
+                                </div>
+                                <div class="tweetbox-message-fire">
+                                    <button id="uploadButton" onClick="tweetFire()" type="button"
+                                        class="tweetbox-message-fire-botton">Story Fire!</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="tweet-list-area" id="tweetListAreas">
+                    <div class="col" id="tweetListArea">
+                        <div class="row">
+                            <div class="tweetbox-user-area">
+                                <div class="tweetbox-user-icon">
+                                    <i class="far fa-user fa-2x"></i>
+                                </div>
+                            </div>
+                            <div class="col tweetbox-message-content">
+                                <div class="tweetlist-name">
+                                    Jeesun<a href="#">@luckymeday</a>
+                                </div>
+                                <br>
+                                <div class="tweetlist-status">
+                                    studuying Javascript!
+                                </div>
+                                <br>
+                                <div class="tweetbox-message-toolbar-icon">
+                                    <button type="button" class="btn btn-link"><i class="far fa-star"></i></button>
+                                    <button type="button" class="btn btn-link"><i class="far fa-comment"></i></button>
+                                    <button type="button" class="btn btn-link"><i class="fas fa-retweet"></i></button>
+                                    <button type="button" class="btn btn-link"><i class="fas fa-upload"></i></button>
+                                    <button type="button" class="btn btn-link"><i class="far fa-trash-alt"
+                                            onclick="remove()"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="tweetbox-user-area">
+                                <div class="tweetbox-user-icon">
+                                    <i class="far fa-user fa-2x"></i>
+                                </div>
+                            </div>
+                            <div class="col tweetbox-message-content">
+                                <div class="tweetlist-name">
+                                    Christina<a href="#">@christina.hohng</a>
+                                </div>
+                                <br>
+                                <div class="tweetlist-status">
+                                    Me too!!
+                                </div>
+                                <br>
+                                <div class="tweetbox-message-toolbar-icon">
+                                    <button type="button" class="btn btn-link"><i class="far fa-star"></i></button>
+                                    <button type="button" class="btn btn-link"><i class="far fa-comment"></i></button>
+                                    <button type="button" class="btn btn-link"><i class="fas fa-retweet"></i></button>
+                                    <button type="button" class="btn btn-link"><i class="fas fa-upload"></i></button>
+                                    <button type="button" class="btn btn-link"><i class="far fa-trash-alt"
+                                            onclick="remove()"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+
+
+                </div>
+
+
+
+
+
+<<<<<<< HEAD
             <!-- Tuan Here -->
             <div class="col-3 border-red">
                 <section>
@@ -188,9 +279,21 @@
                     </footer>
                     <!-- Footer -->
                 </section>
+=======
+>>>>>>> b948568209d5e3ba479eb9db04cbe8eda78b2c59
             </div>
+
+
+
+
+            <script src="main.js"></script>
         </div>
 
+        <!-- Tuan Here -->
+        <div class="col-3 border-red">
+            <section>Right Side</section>
+        </div>
+    </div>
 
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
