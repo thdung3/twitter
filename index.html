@@ -106,109 +106,127 @@
 
 
             <!-- Jeesun Here -->
-            <div class="col-sm-6 border-red">
-                <div class="tweet-box-content">
-                    <div class="row">
-                        <div class="tweetbox-user-area">
-                            <div class="tweetbox-user-icon">
-                            </div>
-                        </div>
-                        <div class="tweetbox-message-content" style="position: relative">
-                            <textarea id="tweetArea" placeholder="What's your story?"></textarea>
-                            <div id="remainArea">140</div>
-                            <div class="row tweetbox-message-toolbar">
-                                <div class="tweetbox-message-toolbar-icon">
-                                    <button type="button" class="btn btn-link"><i class="far fa-image"></i></button>
-                                    <button type="button" class="btn btn-link"><i class="fas fa-poll"></i></button>
-                                    <button type="button" class="btn btn-link"><i
-                                            class="far fa-kiss-wink-heart"></i></button>
-                                    <button type="button" class="btn btn-link"><i
-                                            class="far fa-calendar-alt"></i></button>
-                                </div>
-                                <div class="tweetbox-message-fire">
-                                    <button id="uploadButton" onClick="tweetFire()" type="button"
-                                        class="tweetbox-message-fire-botton">Story Fire!</button>
-                                </div>
-                            </div>
-                        </div>
+            <div class="col-sm-5 border-red">
+                <div class="row">
+                    <!-- 2 -->
+                    <div class="col-sm-2 tweetbox-user-icon border-red">
+                        <img src="hy.jpg">
                     </div>
-                </div>
 
+                    <!-- 10 -->
+                    <div class="col-sm-10 border-red">
+                        <!-- textarea -->
+
+                        <textarea id="tweetArea" cols="50" rows="4" placeholder="What's your story?"
+                            style=" border:none; "></textarea>
+                        <div id="remainArea" style="color:#7dafe9ec">140</div>
+
+                        <!-- collection butoon -->
+                        <div class="row">
+
+                            <div class="col-sm-9 border-red">
+                                <button type="button" class="btn btn-link"><i class="far fa-image"
+                                        style="color:#7dafe9ec"></i></button>
+                                <button type="button" class="btn btn-link"><i class="fas fa-poll"
+                                        style="color:#7dafe9ec"></i></button>
+                                <button type="button" class="btn btn-link"><i class="far fa-kiss-wink-heart"
+                                        style="color:#7dafe9ec"></i></button>
+                                <button type="button" class="btn btn-link"><i class="far fa-calendar-alt"
+                                        style="color:#7dafe9ec"></i></button>
+
+                            </div>
+                            <div class="col-sm-3 border-red">
+                                <button id="uploadButton" onClick="tweetFire()" type="button"
+                                    class="tweetbox-message-fire-botton">Story Fire!</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- <div class="tweetbox-user-area border-red">
+
+                    </div>
+                    <div class="tweetbox-message-main-content border-red">
+                        <br> -->
+
+
+                </div>
+                <div style="background-color:lightgrey; height: 10px; width: 568px; margin-left: -15px;">
+                </div>
                 <div class="tweet-list-area" id="tweetListAreas">
-                    <div class="col" id="tweetListArea">
-                        <div class="row">
-                            <div class="tweetbox-user-area">
-                                <div class="tweetbox-user-icon">
-                                    <i class="far fa-user fa-2x"></i>
+                    <div class="" id="tweetListArea">
+                        <div class="row pb-3 ">
+                            <!-- image col-2 -->
+                            <div class="col-sm-2 tweetbox-list-area">
+                                <div class="tweetbox-list-user-icon">
+                                    <img src="ma2.jpg">
                                 </div>
                             </div>
-                            <div class="col tweetbox-message-content">
+                            <!-- content col-sm-10 -->
+                            <div class="col-sm-10 tweetbox-message-content">
                                 <div class="tweetlist-name">
-                                    Jeesun<a href="#">@luckymeday</a>
+                                    blondebombshell<a href="#"> @marilyn_monroe</a>
                                 </div>
                                 <br>
                                 <div class="tweetlist-status">
-                                    studuying Javascript!
+                                    Give a girl the right pair of shoes and she'll conquer the world.
                                 </div>
-                                <br>
-                                <div class="tweetbox-message-toolbar-icon">
-                                    <button type="button" class="btn btn-link"><i class="far fa-star"></i></button>
-                                    <button type="button" class="btn btn-link"><i class="far fa-comment"></i></button>
-                                    <button type="button" class="btn btn-link"><i class="fas fa-retweet"></i></button>
-                                    <button type="button" class="btn btn-link"><i class="fas fa-upload"></i></button>
+                                <!-- <br> -->
+                                <div class="tweetbox-list-toolbar-icon">
+                                    <button type="button" class="btn btn-link"><i class="far fa-star"
+                                            style="color:#a19c9c"></i></button>
+                                    <button type="button" class="btn btn-link"><i class="far fa-comment"
+                                            style="color:#a19c9c"></i></button>
+                                    <button type="button" class="btn btn-link"><i class="fas fa-retweet"
+                                            style="color:#a19c9c"></i></button>
+                                    <button type="button" class="btn btn-link"><i class="fas fa-upload"
+                                            style="color:#a19c9c"></i></button>
                                     <button type="button" class="btn btn-link"><i class="far fa-trash-alt"
-                                            onclick="remove()"></i></button>
+                                            onclick="remove()" style="color:#a19c9c"></i></button>
                                 </div>
                             </div>
+
                         </div>
+
+                        <!-- new div -->
+
                         <div class="row">
-                            <div class="tweetbox-user-area">
-                                <div class="tweetbox-user-icon">
-                                    <i class="far fa-user fa-2x"></i>
+                            <div class="col-sm-2 tweetbox-list-area">
+                                <div class="tweetbox-list-user-icon">
+                                    <img src="cha.jpg">
                                 </div>
                             </div>
-                            <div class="col tweetbox-message-content">
+                            <div class="col-sm-10 tweetbox-message-content">
                                 <div class="tweetlist-name">
-                                    Christina<a href="#">@christina.hohng</a>
+                                    fatherofcomedy<a href="#"> @charlie_chaplin</a>
                                 </div>
                                 <br>
                                 <div class="tweetlist-status">
-                                    Me too!!
+                                    Life is a tragedy when seen in close-up, but a comedy in long-shot.
                                 </div>
                                 <br>
-                                <div class="tweetbox-message-toolbar-icon">
-                                    <button type="button" class="btn btn-link"><i class="far fa-star"></i></button>
-                                    <button type="button" class="btn btn-link"><i class="far fa-comment"></i></button>
-                                    <button type="button" class="btn btn-link"><i class="fas fa-retweet"></i></button>
-                                    <button type="button" class="btn btn-link"><i class="fas fa-upload"></i></button>
+                                <div class="tweetbox-list-toolbar-icon">
+                                    <button type="button" class="btn btn-link"><i class="far fa-star"
+                                            style="color:#a19c9c"></i></button>
+                                    <button type="button" class="btn btn-link"><i class="far fa-comment"
+                                            style="color:#a19c9c"></i></button>
+                                    <button type="button" class="btn btn-link"><i class="fas fa-retweet"
+                                            style="color:#a19c9c"></i></button>
+                                    <button type="button" class="btn btn-link"><i class="fas fa-upload"
+                                            style="color:#a19c9c"></i></button>
                                     <button type="button" class="btn btn-link"><i class="far fa-trash-alt"
-                                            onclick="remove()"></i></button>
+                                            onclick="remove()" style="color:#a19c9c"></i></button>
                                 </div>
                             </div>
                         </div>
 
                     </div>
-
-
-
-
-
                 </div>
 
-
-
-
-
-
-
-
-
-
-                <script src="main.js"></script>
             </div>
 
             <!-- Tuan Here -->
-            <div class="col-sm-3">
+            <div class="col-sm-4">
                 <section>
 
                     <ul class="list-group mb-4">
@@ -289,6 +307,9 @@
                 </section>
             </div>
         </div>
+
+
+    </div>
 
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
