@@ -2,10 +2,10 @@ let tweetArea = document.getElementById("tweetArea");
 let num = 1;
 let tweetList = [{
   id: 1,
-  user: "Jeesun",
-  pic: "...",
-  handle: "luckymeday",
-  contents: "studuying Javascript!",
+  user: "blondebombshell",
+  pic: "ma2.jpg",
+  handle: "marilyn_monroe",
+  contents: "Give a girl the right pair of shoes and she'll conquer the world.",
   hasRetweet: false,
   isDirectRT: false,
   parentTweetID: "",
@@ -17,10 +17,10 @@ let tweetList = [{
   postTime: new Date(2020, 4, 24, 23, 05, 30),
 }, {
   id: 0,
-  user: "Christina",
-  pic: "...",
-  handle: "christina.hohng",
-  contents: "Me too!!",
+  user: "fatherofcomedy",
+  pic: "cha.jpg",
+  handle: "charlie_chaplin",
+  contents: "Life is a tragedy when seen in close-up, but a comedy in long-shot.",
   hasRetweet: false,
   isDirectRT: false,
   parentTweetID: "",
@@ -63,9 +63,9 @@ const tweetFire = () => {
   num++;
   let tweet = {
     id: num,
-    user: 'JeeSun',
-    pic: '...',
-    handle: '@lee',
+    user: 'jeesunlee',
+    pic: 'hy.jpg',
+    handle: 'luckymeday',
     contents: document.getElementById("tweetArea").value,
     hasRetweet: false,
     isDirectRT: false,
@@ -79,7 +79,7 @@ const tweetFire = () => {
   };
   console.log('tweet:', tweet)
   tweetList.unshift(tweet);
-
+  document.getElementById("tweetArea").value = ""
   render(tweetList);
 };
 // render()
@@ -87,14 +87,14 @@ const tweetFire = () => {
 const render = (list) => {
   let html = list.map(item => {
     return `<div class="row">
-    <div class="tweetbox-user-area">
-        <div class="tweetbox-user-icon">
-        ${item.pic}
+      <div class="tweetbox-list-area">
+   <div class="tweetbox-list-user-icon">
+        <img src="${item.pic}">
         </div>
     </div>
     <div class="col tweetbox-message-content">
         <div class="tweetlist-name">
-        ${item.user}<a href="#">${item.handle}</a>
+        ${item.user} <a href="#"> @${item.handle}</a>
         </div>
         <br>
         <div class="tweetlist-status">
@@ -102,13 +102,14 @@ const render = (list) => {
         </div>
         <br>
         <div class="tweetbox-message-toolbar-icon">
-            <button type="button" class="btn btn-link"><i class="far fa-star">${item.likes}</i></button>
-            <button type="button" class="btn btn-link"><i class="far fa-comment">${item.comments}</i></button>
-            <button type="button" class="btn btn-link"><i class="fas fa-retweet">${item.retweets}</i></button>
-            <button type="button" class="btn btn-link"><i class="fas fa-upload"></i></button>
-            <button type="button" class="btn btn-link"><i class="far fa-trash-alt" onclick="remove(${item.id})"></i></button>
+            <button type="button" class="btn btn-link"><i class="far fa-star" style="color:#a19c9c">${item.likes}</i></button>
+            <button type="button" class="btn btn-link"><i class="far fa-comment" style="color:#a19c9c">${item.comments}</i></button>
+            <button type="button" class="btn btn-link"><i class="fas fa-retweet" style="color:#a19c9c">${item.retweets}</i></button>
+            <button type="button" class="btn btn-link"><i class="fas fa-upload" style="color:#a19c9c"></i></button>
+            <button type="button" class="btn btn-link"><i class="far fa-trash-alt" onclick="remove(${item.id})" style="color:#a19c9c"></i></button>
         </div>
-    </div>
+    </div><hr>
+    
 </div>`
   }).join('')
   document.getElementById('tweetListArea').innerHTML = html
