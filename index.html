@@ -16,56 +16,97 @@
     <link rel="stylesheet" href="dung.css">
     <link rel="stylesheet" href="tuan.css">
     <link rel="stylesheet" href="jeesun.css">
+    <link rel="icon" href="images/logo.svg">
 </head>
 
 <body>
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Navbar</a>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand col-3" href="#">
+                <i class="fab fa-themeisle"></i>
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Disabled</a>
-                    </li>
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
+            <div class="col-6"></div>
+
+            <div class="collapse navbar-collapse" id="inputSearch">
+                <i class="fas fa-search search"></i>
+                <input id="txtSearch" type="text" placeholder="Search">
             </div>
         </nav>
         <div class="row">
             <!-- Dung Here -->
-            <div class="col-3 border-red">
-                <section>Left Side</section>
+            <div class="col-sm-3">
+                <div id="left-menu">
+                    <div id="btn-home" class="left-menu-item">
+                        <i class="fas fa-home col-sm-2"></i>
+                        <!-- <input class="left-menu" type="submit" value="Home" onclick="searchCatelogy(this.name)"> -->
+                        <a href="#" onclick=>Home</a>
+                    </div>
+                    <div id="btn-explorer" class="left-menu-item">
+                        <i class="fas fa-hashtag col-sm-2"></i>
+                        <!-- <i class="fab fa-slack-hash"></i> -->
+                        <a href="#">Explorer</a>
+                    </div>
+                    <div id="btn-notification" class="left-menu-item">
+                        <i class="far fa-bell col-sm-2"></i>
+                        <!-- <i class="fas fa-bell"></i> -->
+                        <a href="#">Notifications</a>
+                    </div>
+                    <div id="btn-message" class="left-menu-item">
+                        <i class="far fa-envelope  col-sm-2"></i>
+                        <!-- <i class="fas fa-envelope"></i> -->
+                        <a href="#">Messages</a>
+                    </div>
+                    <div id="btn-bookmark" class="left-menu-item">
+                        <i class="far fa-bookmark  col-sm-2"></i>
+                        <!-- <i class="fas fa-bookmark"></i> -->
+                        <a href="#">Bookmarks</a>
+                    </div>
+                    <div id="btn-list" class="left-menu-item">
+                        <i class="far fa-list-alt  col-sm-2"></i>
+                        <!-- <i class="fas fa-list-alt"></i> -->
+                        <a href="#">Lists</a>
+                    </div>
+                    <div id="btn-profile" class="left-menu-item">
+                        <i class="far fa-user  col-sm-2"></i>
+                        <!-- <i class="fas fa-user"></i> -->
+                        <a href="#">Profile</a>
+                    </div>
+                    <div id="btn-more" class="left-menu-item">
+                        <i class="far fa-comment-dots  col-sm-2"></i>
+                        <!-- <i class="fas fa-comment-dots"></i> -->
+                        <!-- <input class="left-menu" type="submit" value="More" onclick="searchCatelogy(this.name)"> -->
+                        <a href="#">More</a>
+                    </div>
+                </div>
+                <div class="btn-tweet-left-area">
+                    <input class="col-10" id="btn-tweet-left" type="submit" value="Tweet"
+                        onclick="searchCatelogy(this.name)">
+                </div>
+                <div class="left-menu-account">
+                    <div class="col-sm-2 p-0">
+                        <img class="rounded-circle w-100"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSErLkGTgw9909gKLGRTxEhNI7XkLbWbnmmsg&usqp=CAU"
+                            alt="" style="width:50px;">
+                    </div>
+
+                    <div class="col-sm-8" id="left-menu-account-user">
+                        <span>Dung</span>
+                        <span>@thdung3</span>
+                        <!-- <p>dung</p>
+                        <p>@thdung3</p> -->
+                    </div>
+                    <i class="fas fa-arrow-down col-sm-1" id="left-menu-account-arrow"></i>
+                </div>
             </div>
 
 
             <!-- Jeesun Here -->
-            <div class="col-6 border-red">
+            <div class="col-sm-5 border-red">
                 <div class="row">
                     <!-- 2 -->
                     <div class="col-sm-2 tweetbox-user-icon border-red">
@@ -144,11 +185,11 @@
                                             onclick="remove()" style="color:#a19c9c"></i></button>
                                 </div>
                             </div>
-                            
+
                         </div>
 
                         <!-- new div -->
-                        
+
                         <div class="row">
                             <div class="col-sm-2 tweetbox-list-area">
                                 <div class="tweetbox-list-user-icon">
@@ -185,16 +226,87 @@
             </div>
 
             <!-- Tuan Here -->
-            <div class="col-3 border-red">
-                <section>Right Side</section>
+            <div class="col-sm-4">
+                <section>
+
+                    <ul class="list-group mb-4">
+
+                        <li class="list-group-item d-flex justify-content-between">
+                            <h5><strong>Trends for you</strong> </h5>
+                            <i class="fas fa-cog "></i>
+                        </li>
+
+                        <span id="trendingTwitter"></span>
+                        <li id="" class="list-group-item ">
+                            <a onclick="showMoreTrend()" href="#trendingTwitter">Show more</a>
+                        </li>
+
+                    </ul>
+
+                    <!-- who to follow -->
+                    <ul class="list-group">
+
+                        <li class="list-group-item ">
+                            <strong>
+                                <h3>Who to follow?</h3>
+                            </strong>
+                        </li>
+
+                        <!-- follwer/people twitter JS handle this-->
+                        <span id="peopleTwitter">
+
+                        </span>
+
+
+
+                        <li id="bca" class="list-group-item ">
+                            <a onclick="showMoreFollwer()" href="#bca">Show more</a>
+                        </li>
+                    </ul>
+
+                    <!-- Footer -->
+                    <footer class="page-footer font-small pt-4">
+
+                        <ul class="list-unstyled text-muted ">
+                            <li class="d-inline">
+                                <a class="text-muted  " href="#!">Terms</a>
+                            </li>
+                            <li class="d-inline">
+                                <a class="text-muted  " href="#!">Privacy Policy</a>
+                            </li>
+                            <li class="d-inline">
+                                <a class="text-muted " href="#!">Cookies</a>
+                            </li>
+                            <li class="d-inline">
+                                <a class="text-muted " href="#!">About ads</a>
+                            </li>
+                            <li class="d-inline dropdown show">
+                                <a class="text-muted dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    More
+                                </a>
+
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item" href="#">About</a>
+                                    <a class="dropdown-item" href="#">Status</a>
+                                    <a class="dropdown-item" href="#">Companies</a>
+                                    <a class="dropdown-item" href="#">Developers</a>
+                                </div>
+
+                            </li>
+                        </ul>
+
+
+
+                        <!-- Copyright -->
+                        <div class="footer-copyright text-center py-3">© 2020 Twitter, Inc.</div>
+                        <!-- Copyright -->
+
+                    </footer>
+                    <!-- Footer -->
+                </section>
             </div>
         </div>
-
-
-
-
-        <script src="main.js"></script>
-    </div>
 
 
     </div>
@@ -210,6 +322,7 @@
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
     <script src="script.js"></script>
+    <script src="script-tuan.js"></script>
 </body>
 
 </html>
