@@ -3,7 +3,7 @@ let num = 1;
 let tweetList = [{
   id: 1,
   user: "blondebombshell",
-  pic: "ma2.jpg",
+  pic: "/img/ma2.jpg",
   handle: "marilyn_monroe",
   contents: "Give a girl the right pair of shoes and she'll conquer the world.",
   hasRetweet: false,
@@ -20,7 +20,7 @@ let tweetList = [{
 }, {
   id: 0,
   user: "fatherofcomedy",
-  pic: "cha.jpg",
+  pic: "/img/cha.jpg",
   handle: "charlie_chaplin",
   contents: "Life is a tragedy when seen in close-up, but a comedy in long-shot.",
   hasRetweet: false,
@@ -67,9 +67,9 @@ const tweetFire = () => {
   num++;
   let tweet = {
     id: num,
-    user: 'jeesunlee',
-    pic: 'hy.jpg',
-    handle: 'luckymeday',
+    user: 'jamesdean',
+    pic: '/img/ja.jpg',
+    handle: 'dreamforever',
     contents: document.getElementById("tweetArea").value,
     hasRetweet: false,
     isDirectRT: false,
@@ -86,40 +86,73 @@ const tweetFire = () => {
   console.log('tweet:', tweet)
   tweetList.unshift(tweet);
   document.getElementById("tweetArea").value = ""
+  MAX_CHAR = 140
+  document.getElementById("remainArea").innerHTML = MAX_CHAR;
   render(tweetList);
 };
-// render()
+
 
 const render = (list) => {
   let html = list.map(item => {
-    return `<div class="row">
-      <div class="tweetbox-list-area">
-   <div class="tweetbox-list-user-icon">
-        <img src="${item.pic}">
-        </div>
-    </div>
-    <div class="col tweetbox-message-content">
-        <div class="tweetlist-name">
-        ${item.user} <a href="#"> @${item.handle}</a>
-        </div>
-        <br>
-        <div class="tweetlist-status">
-        ${item.contents}
-        </div>
-        <br>
-        <div class="tweetbox-message-toolbar-icon">
-            <button type="button" class="btn btn-link"><i id="btn-like" class="far fa-star" onclick="doLike(${item.id})">${item.likes}</i></button>
-            <button type="button" class="btn btn-link"><i class="far fa-comment" onclick="renderCommentModal(${item.id})">${item.comments}</i></button>
-            <button type="button" class="btn btn-link"><i class="fas fa-retweet" onclick="renderModal(${item.id})"
-            style="color:#a19c9c">${item.retweets}</i></button>
-            <button type="button" class="btn btn-link"><i class="fas fa-upload" style="color:#a19c9c"></i></button>
-            <button type="button" class="btn btn-link"><i class="far fa-trash-alt" onclick="remove(${item.id})" style="color:#a19c9c"></i></button>
-        </div>
-    </div><hr>
+    return `<div class="row pb-3 ">
+      <div class="col-sm-2 list-area">
+          <div class="list-user-icon">
+              <img src="/img/ma.jpg">
+          </div>
+      </div>
+      <div class="col-sm-10 tweetbox-message-content">
+          <div>
+          ${item.user}<a href="#"> @${item.handle}</a>
+          </div>
+          <br>
+          <div>
+          ${item.contents}
+              <div class="retweet">
+                  <div class="retweet-icon">
+                      <img src="${item.pic}"> artsyworld<a href="#"> @manolo_blahnik</a>
+                  </div>
+                  ${item.contents}
+              </div>
+          </div>
+          <div class="list-toolbar-icon">
+              <button type="button" class="btn btn-link"><i class="far fa-star">${item.likes}</i></button>
+              <button type="button" class="btn btn-link"><i class="far fa-comment">${item.comments}</i></button>
+              <button type="button" class="btn btn-link"><i class="fas fa-retweet">${item.retweets}</i></button>
+              <button type="button" class="btn btn-link"><i class="fas fa-upload"></i></button>
+              <button type="button" class="btn btn-link"><i class="far fa-trash-alt"
+                      onclick="remove(${item.id})"></i></button>
+          </div>
+      </div>
 
-</div>`
+  </div>`
+
+    //     return `<div class="row pb-3 ">
+    //     <div class="col-sm-2 list-area">
+    //     <div class="list-user-icon">
+    //         <img src="${item.pic}">
+    //     </div>
+    //     </div>
+    //     <div class="col-sm-10 tweetbox-message-content">
+    //         <div>
+    //         ${item.user}<a href="#"> @${item.handle}</a>
+    //         </div>
+    //         <br>
+    //             <div>
+    //         ${item.contents}
+    //             </div>
+    //             <div class="list-toolbar-icon">
+    //                 <button type="button" class="btn btn-link"><i class="far fa-star">${item.likes}</i></button>
+    //                 <button type="button" class="btn btn-link"><i class="far fa-comment">${item.comments}</i></button>
+    //               <button type="button" class="btn btn-link"><i class="fas fa-retweet">${item.retweets}</i></button>
+    //             <button type="button" class="btn btn-link"><i class="fas fa-upload"></i></button>
+    //             <button type="button" class="btn btn-link"><i class="far fa-trash-alt" onclick="remove(${item.id})></i></button>
+    //           </div>
+    //       </div>
+    //     </div>
+    // </div>`
   }).join('')
   document.getElementById('tweetListArea').innerHTML = html
+  MAX_CHAR = 140;
 }
 
 const renderModal = (tweetId) => {

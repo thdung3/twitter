@@ -142,7 +142,7 @@ function renderFollower() {
         if (index < sizeFollwerTwitter) {
             if (item.follow == false) {
                 document.getElementById("peopleTwitter").innerHTML +=
-                `
+                    `
                 <li class="list-group-item container-fluid">
                     <div class="row" >
                         <div class="col-2 p-0 ">
@@ -165,20 +165,25 @@ function renderFollower() {
 
                 document.getElementById("peopleTwitter").innerHTML +=
                     `
-                    <div class="col-2 p-0">
-                        <img class="rounded-circle w-100"
-                            src="${item.img}"
-                            alt="" style="width:50px; ">
+                    <li class="list-group-item container-fluid">
+                    <div class="row" >
+                        <div class="col-2 p-0 ">
+                            <img class="rounded-circle w-100"
+                                src="${item.img}"
+                                alt="" style="width:50px; ">
+                        </div>
+                        <div class="col-6 m-0">
+                            <!-- verify icon -->
+                            <h5 class="small mb-0 mt-2"><strong>${item.name}</strong><img class="ml-1"
+                                    src="img/768px-Twitter_Verified_Badge.png" alt="" style="width: 20px"></h5>
+        
+                            <p>@${item.twitter}</p>
+                        </div>
+                        <div class="col-3 ml-3"><button onclick="toggleFollow(${index})" class="btn btn-primary px-1 ml-0 mr-5">Following</button></div>
                     </div>
-                    <div class="col-6 m-0">
-                        <!-- verify icon -->
-                        <h5 class="small mb-0 mt-2"><strong>${item.name}</strong><img class="ml-1"
-                                src="img/768px-Twitter_Verified_Badge.png" alt="" style="width: 20px"></h5>
-    
-                        <p>@${item.twitter}</p>
-                    </div>
-                    <div class="col-3 ml-3"><button onclick="toggleFollow(${index})" class="btn btn-primary px-1 ml-0 mr-5">Following</button></div>
+                </li>
                 `
+
             }
         }
     })
