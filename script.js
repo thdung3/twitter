@@ -136,7 +136,7 @@ const render = (list) => {
       html += `<button id="btn-like" type="button" class="btn btn-link"><i id="ico-like" class="far fa-star" onclick="doLike(${item.id})"></i>${item.likes}</button>`
     }
     html += `
-              <button type="button" class="btn btn-link"><i class="far fa-comment" onclick="renderCommentModal(${item.id})">${renderHashTag(item.comments)}</i></button>
+              <button type="button" class="btn btn-link"><i class="far fa-comment" onclick="renderCommentModal(${item.id})">${item.comments}</i></button>
               <button type="button" class="btn btn-link"><i class="fas fa-retweet" onclick="renderModal(${item.id})">${item.retweets}</i></button>
               <button type="button" class="btn btn-link"><i class="fas fa-upload"></i></button>
               <button type="button" class="btn btn-link"><i class="far fa-trash-alt"
