@@ -25,23 +25,20 @@
     resize: none;
     border: none;
     font-family: "Lato", sans-serif;
-    height: 20vh;
+    /* height: 20vh; */
     border-radius: 10px;
     padding: 5px;
     max-width: 100%;
     min-height: 50px;
-    /* margin-top: 10px; */
-    /* margin-bottom: 10px; */
+    /* margin-top: 10px;
+    margin-bottom: 10px;
 
-    /* margin-left: 10px; */
+    margin-left: 10px; */
 }
 
 #tweetListArea > .row:hover{
     cursor: pointer;
     background-color: #cdd3cd;
-}
-.tweetbox-message-content:hover{
-    
 }
 
 .tweetbox-user-icon img{
@@ -56,7 +53,7 @@
     justify-content: space-between;    
 }
 
-.fa-image{
+/* .fa-image{
     font-size: 25px;
 }
 .fa-image:hover{
@@ -103,7 +100,7 @@
     width: 35px;
     height: 35px;
     padding-top: 3px;   
-}
+} */
 
 .tweetbox-message-fire-botton{
     background-color:#7dafe9ec;
@@ -125,21 +122,21 @@
     resize: none;
     border: none;
     padding: 5px;
-    max-width: 100%;
+    /* max-width: 100%;
     min-height: 50px;
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-left:18px;
+    margin-left:18px; */
 }
 
 .tweetbox-list-area{
     resize: none;
     border: none;
     padding: 5px;
-    max-width: 100%;
+    /* max-width: 100%;
     min-height: 50px;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 10px; */
 }
 
 .tweetbox-list-user-icon img{
@@ -156,8 +153,8 @@
     /* padding: 5px; */
     max-width: 100%;
     min-height: 50px;
-    /* margin-top: 10px;
-    margin-bottom: 10px; */
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .fa-star{
@@ -237,12 +234,19 @@
 }
 
 
-#tweetListArea>.row{
+#tweetListAreas>.row{
 border-bottom: 1px solid black;
 padding-bottom: 2vh;
 }
 
+#box-retweet {
+    margin: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
 
-.border-red{
-    border:none;
+.change-like-color {
+    color: pink;
 }
