@@ -161,22 +161,29 @@
     border-radius: 50%; 
 }
 
-.comment-area{
-    display: flex;
-
-flex-wrap: wrap;
+.comment .col-sm-2{
+    display: flex;  
+    justify-content: flex-end;
+    align-items: center;
 }
 
-
-
-
-.comment-icon img{
+.comment .col-sm-2 img{
     border-radius: 50%;
     object-fit: cover;
     width:25px;
     height:25px;
 }
 
+.comment  .col-sm-10{
+    display: inline-block;
+    border: rgb(180, 175, 175) solid 1px;
+    border-radius: 20px;
+    padding: 1%;
+}
+
+.comment{
+    display: flex;
+}
 
 /* 
 .fa-star{
