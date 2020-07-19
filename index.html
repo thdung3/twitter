@@ -216,107 +216,116 @@
                             <button type="button" class="btn btn-link"><i class="far fa-trash-alt"
                                     onclick="remove()"></i></button>
                         </div>
-                        <div class="container">
-                            <div clas="row border border-danger">
-                                <div class="d-inline border border-danger comment-icon">
-                                    <img src="/img/ja.jpg"></div>
-                                <div class="d-inline border border-danger">
-                                    <a href="#"> @dreamforever</a>
-                                    <p>Dream as if you'll live forever. Live as if you'll die today.</p>
-                                </div>
-                            </div> 
-                        </div> <!--close container-->
+                        <!-- <div class="container"> -->
+                        <div class="comment row mt-2">
+                            <div class="col-sm-2">
+                                <img src="/img/ja.jpg"></div>
+                            <div class="col-sm-10">
+                                <a href="#"> @dreamforever</a>
+                                <p>Dream as if you'll live forever. Live as if you'll die today.</p>
+                            </div>
+                        </div>
+                        <div class="comment row mt-2">
+                            <div class="col-sm-2">
+                                <img src="/img/ja.jpg"></div>
+                            <div class="col-sm-10">
+                                <a href="#"> @dreamforever</a>
+                                <p>Dream as if you'll live forever. Live as if you'll die today.</p>
+                            </div>
+                        </div>
+                        <!-- </div> -->
+                        <!--close container-->
 
 
                     </div>
                 </div>
 
+            </div><!-- Tuan Here -->
+            <div class="col-sm-4">
+                <section>
+
+                    <ul class="list-group mb-4">
+
+                        <li class="list-group-item d-flex justify-content-between">
+                            <h5><strong>Trends for you</strong> </h5>
+                            <i class="fas fa-cog "></i>
+                        </li>
+
+                        <span id="trendingTwitter"></span>
+                        <li id="" class="list-group-item ">
+                            <a onclick="showMoreTrend()" href="#trendingTwitter">Show more</a>
+                        </li>
+
+                    </ul>
+
+                    <!-- who to follow -->
+                    <ul class="list-group">
+
+                        <li class="list-group-item ">
+                            <strong>
+                                <h3>Who to follow?</h3>
+                            </strong>
+                        </li>
+
+                        <!-- follwer/people twitter JS handle this-->
+                        <span id="peopleTwitter">
+
+                        </span>
+
+
+
+                        <li id="bca" class="list-group-item ">
+                            <a onclick="showMoreFollwer()" href="#bca">Show more</a>
+                        </li>
+                    </ul>
+
+                    <!-- Footer -->
+                    <footer class="page-footer font-small pt-4">
+
+                        <ul class="list-unstyled text-muted ">
+                            <li class="d-inline">
+                                <a class="text-muted  " href="#!">Terms</a>
+                            </li>
+                            <li class="d-inline">
+                                <a class="text-muted  " href="#!">Privacy Policy</a>
+                            </li>
+                            <li class="d-inline">
+                                <a class="text-muted " href="#!">Cookies</a>
+                            </li>
+                            <li class="d-inline">
+                                <a class="text-muted " href="#!">About ads</a>
+                            </li>
+                            <li class="d-inline dropdown show">
+                                <a class="text-muted dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    More
+                                </a>
+
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item" href="#">About</a>
+                                    <a class="dropdown-item" href="#">Status</a>
+                                    <a class="dropdown-item" href="#">Companies</a>
+                                    <a class="dropdown-item" href="#">Developers</a>
+                                </div>
+
+                            </li>
+                        </ul>
+
+
+
+                        <!-- Copyright -->
+                        <div class="footer-copyright text-center py-3">© 2020 Twitter, Inc.</div>
+                        <!-- Copyright -->
+
+                    </footer>
+                    <!-- Footer -->
+                </section>
             </div>
         </div>
 
     </div>
 
-    <!-- Tuan Here -->
-    <div class="col-sm-4">
-        <section>
 
-            <ul class="list-group mb-4">
-
-                <li class="list-group-item d-flex justify-content-between">
-                    <h5><strong>Trends for you</strong> </h5>
-                    <i class="fas fa-cog "></i>
-                </li>
-
-                <span id="trendingTwitter"></span>
-                <li id="" class="list-group-item ">
-                    <a onclick="showMoreTrend()" href="#trendingTwitter">Show more</a>
-                </li>
-
-            </ul>
-
-            <!-- who to follow -->
-            <ul class="list-group">
-
-                <li class="list-group-item ">
-                    <strong>
-                        <h3>Who to follow?</h3>
-                    </strong>
-                </li>
-
-                <!-- follwer/people twitter JS handle this-->
-                <span id="peopleTwitter">
-
-                </span>
-
-
-
-                <li id="bca" class="list-group-item ">
-                    <a onclick="showMoreFollwer()" href="#bca">Show more</a>
-                </li>
-            </ul>
-
-            <!-- Footer -->
-            <footer class="page-footer font-small pt-4">
-
-                <ul class="list-unstyled text-muted ">
-                    <li class="d-inline">
-                        <a class="text-muted  " href="#!">Terms</a>
-                    </li>
-                    <li class="d-inline">
-                        <a class="text-muted  " href="#!">Privacy Policy</a>
-                    </li>
-                    <li class="d-inline">
-                        <a class="text-muted " href="#!">Cookies</a>
-                    </li>
-                    <li class="d-inline">
-                        <a class="text-muted " href="#!">About ads</a>
-                    </li>
-                    <li class="d-inline dropdown show">
-                        <a class="text-muted dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            More
-                        </a>
-
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <a class="dropdown-item" href="#">About</a>
-                            <a class="dropdown-item" href="#">Status</a>
-                            <a class="dropdown-item" href="#">Companies</a>
-                            <a class="dropdown-item" href="#">Developers</a>
-                        </div>
-
-                    </li>
-                </ul>
-
-
-
-                <!-- Copyright -->
-                <div class="footer-copyright text-center py-3">© 2020 Twitter, Inc.</div>
-                <!-- Copyright -->
-
-            </footer>
-            <!-- Footer -->
-        </section>
-    </div>
     </div>
 
 
