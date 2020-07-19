@@ -41,10 +41,10 @@
             <!-- Dung Here -->
             <div class="col-sm-3">
                 <div id="left-menu">
-                    <div id="btn-home" class="left-menu-item">
+                    <div id="btn-home" onclick="clickHome()" class="left-menu-item">
                         <i class="fas fa-home col-sm-2"></i>
                         <!-- <input class="left-menu" type="submit" value="Home" onclick="searchCatelogy(this.name)"> -->
-                        <a href="#" onclick=>Home</a>
+                        <a href="#">Home</a>
                     </div>
                     <div id="btn-explorer" class="left-menu-item">
                         <i class="fas fa-hashtag col-sm-2"></i>
@@ -87,11 +87,10 @@
                     <input class="col-10" id="btn-tweet-left" type="submit" value="Tweet" data-toggle="modal"
                         data-target="#status-modal">
                 </div>
-                <div class=" eft-menu-account">
+                <div class="left-menu-account">
                     <div class="col-sm-2 p-0">
-                        <img class="rounded-circle w-100"
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSErLkGTgw9909gKLGRTxEhNI7XkLbWbnmmsg&usqp=CAU"
-                            alt="" style="width:50px;">
+                        <img class="rounded-circle w-100 w-100" src="/img/ja.jpg" alt=""
+                            style="height: 50px; width:50px;">
                     </div>
 
                     <div class="col-sm-8" id="left-menu-account-user">
@@ -193,7 +192,7 @@
 
                 <!-- new div -->
 
-                <div class="row pb-3">
+                <!-- <div class="row pb-3">
                     <div class="col-sm-2 list-area">
                         <div class="list-user-icon">
                             <img src="/img/cha.jpg">
@@ -205,7 +204,8 @@
                         </div>
                         <br>
                         <div>
-                            Life is a tragedy when seen in close-up, but a comedy in long-shot.
+                            Life is a tragedy when seen in close-up, <a href="#" >#Hello</a> but a
+                            comedy in long-shot.
                         </div>
                         <br>
                         <div class="list-toolbar-icon">
@@ -216,7 +216,6 @@
                             <button type="button" class="btn btn-link"><i class="far fa-trash-alt"
                                     onclick="remove()"></i></button>
                         </div>
-                        <!-- <div class="container"> -->
                         <div class="comment row mt-2">
                             <div class="col-sm-2">
                                 <img src="/img/ja.jpg"></div>
@@ -231,62 +230,10 @@
                             <div class="col-sm-10">
                                 <a href="#"> @dreamforever</a>
                                 <p>Dream as if you'll live forever. Live as if you'll die today.</p>
-                            </div>
-                        </div>
-                        <!-- </div> -->
-                        <!--close container-->
-
-
-                        <!-- new div  -->
-                        <div class="row">
-                            <!-- image col-2 -->
-                            <div class="col-sm-2 tweetbox-list-area border-red">
-                                <div class="tweetbox-list-user-icon">
-                                    <img src="ma2.jpg">
-                                </div>
-                            </div>
-                            <!-- content col-sm-10 -->
-                            <div class="col-sm-10 tweetbox-message-content">
-                                <div class="tweetlist-name">
-                                    blondebombshell<a href="#"> @marilyn_monroe</a>
-                                </div>
-                                <div class="tweetlist-status">
-                                    Last year
-                                </div>
-                                <!-- for retweet -->
-                                <div class="row" id="box-retweet">
-                                    <div class="col-sm-2">
-                                        <div class="tweetbox-list-user-icon">
-                                            <img src="ma2.jpg">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-10">
-                                        <div class="">
-                                            blondebombshell<a href="#"> @marilyn_monroe</a>
-                                        </div>
-                                        <div class="">
-                                            Give a girl the right pair of shoes and she'll conquer the world.
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- end for retweet -->
-                                <div class="tweetbox-list-toolbar-icon">
-                                    <button type="button" class="btn btn-link" onclick="doLike()"><i
-                                            class="far fa-star"></i></button>
-                                    <button type="button" class="btn btn-link"><i class="far fa-comment"
-                                            style="color:#a19c9c"></i></button>
-                                    <button type="button" class="btn btn-link"><i class="fas fa-retweet"
-                                            style="color:#a19c9c"></i></button>
-                                    <button type="button" class="btn btn-link"><i class="fas fa-upload"
-                                            style="color:#a19c9c"></i></button>
-                                    <button type="button" class="btn btn-link"><i class="far fa-trash-alt"
-                                            onclick="remove()" style="color:#a19c9c"></i></button>
-                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
             </div><!-- Tuan Here -->
             <div class="col-sm-4">
@@ -391,13 +338,12 @@
                         <div class="modal-body">
                             <div class=row>
                                 <div class="col-sm-2 p-0">
-                                    <img class="rounded-circle w-100"
-                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSErLkGTgw9909gKLGRTxEhNI7XkLbWbnmmsg&usqp=CAU"
-                                        alt="" style="width:50px;">
+                                    <img class="rounded-circle w-100" src="/img/ja.jpg" alt=""
+                                        style="width:50px;height:50px">
                                 </div>
                                 <div class="col-sm-10">
-                                    <textarea id="tweetAreaModal" cols="45" rows="4" placeholder="What's your story?"
-                                        style=" border:none; "></textarea>
+                                    <textarea id="tweetAreaModal border-red" cols="45" rows="4"
+                                        placeholder="What's your story?" style=" border:none; "></textarea>
                                 </div>
                             </div>
                         </div>
@@ -437,7 +383,7 @@
                             <div class=row>
                                 <div class="col-sm-2 p-0">
                                     <img class="rounded-circle w-100"
-                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSErLkGTgw9909gKLGRTxEhNI7XkLbWbnmmsg&usqp=CAU"
+                                        src="https://lh3.googleusercontent.com/proxy/2ch8wgy4Lnbb7SsZ4rSmTw6EiZdjhIKgJYLnGUlTEt_rJ3idcKYv-HlT4QB_0_83JVi7bWzqOPeeVdNXaFJkjdMFIeDJbi1xoEmQQ47yPgLJG3IwqB5b1WdmFVWx2ypmsuKlBDPQKcVRnDBu-oNDSnYUjhmix5ZW"
                                         alt="" style="width:50px;">
                                 </div>
                                 <div class="col-sm-10">
